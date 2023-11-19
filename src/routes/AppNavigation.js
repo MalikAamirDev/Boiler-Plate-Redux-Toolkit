@@ -6,6 +6,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import TabNavigation from './TabNavigation';
 import CounterScreen from '../screens/CounterScreen';
 import CartScreen from '../screens/CartScreen';
+import SingleProduct from '../screens/SingleProduct';
 
 const Stack = createNativeStackNavigator();
 
@@ -14,7 +15,7 @@ const AppNavigation = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>
-        {userData ? (
+        {true ? (
           <Stack.Group>
             <Stack.Screen name="root" component={TabNavigation} />
             <Stack.Screen name="SingleProduct" component={SingleProduct} />
