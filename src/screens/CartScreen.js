@@ -84,7 +84,7 @@ const CartScreen = () => {
       <View style={styles.bottom}>
         <Text style={styles.totalAmount}>
           Total Amount:{'  '}
-          <Text style={styles.totalAmountPrice}>{totalAmount}$</Text>
+          <Text style={styles.totalAmountPrice}>0$</Text>
         </Text>
 
         <MyButton onPress={handleCheckout} title="Proceed to checkout" />

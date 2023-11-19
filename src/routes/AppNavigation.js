@@ -15,7 +15,7 @@ const AppNavigation = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>
-        {true ? (
+        {userData ? (
           <Stack.Group>
             <Stack.Screen name="root" component={TabNavigation} />
             <Stack.Screen name="SingleProduct" component={SingleProduct} />
